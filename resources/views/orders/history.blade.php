@@ -92,7 +92,7 @@
                                             </span>
                                             
                                             <!-- Dropdown untuk ganti status (Hanya untuk operator) -->
-                                            @auth
+                                            <!-- @auth
                                                 @if(auth()->user()->isOperator() || auth()->user()->isAdmin())
                                                 <div class="dropdown">
                                                     <button class="btn btn-sm btn-outline-secondary dropdown-toggle" 
@@ -113,7 +113,7 @@
                                                         @endforeach
                                                     </ul>
                                                 </div>
-                                                @endif
+                                                @endif -->
                                             @endauth
                                         </div>
                                     </td>
@@ -129,7 +129,7 @@
                                                 <i class="bi bi-eye"></i>
                                             </a>       
                                             <!-- Tombol Hapus (Hanya untuk operator) -->
-                                        @auth
+                                        <!-- @auth
                                              @if(auth()->user()->isOperator() || auth()->user()->isAdmin())
                                             <button class="btn btn-sm btn-outline-danger delete-order" 
                                                       data-order-id="{{ $order->id }}"
@@ -138,7 +138,7 @@
                                                  <i class="bi bi-trash"></i>
                                             </button>
                                             @endif
-                                        @endauth
+                                        @endauth -->
                                     </td>                                           
                                         </div>
                                          
