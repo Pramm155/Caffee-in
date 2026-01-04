@@ -248,7 +248,7 @@
                                         </div>
                                     </td>
                                     <td class="fw-bold text-success">
-                                        <i class="bi bi-currency-dollar me-1"></i>
+                                        <i class="bi bi-currency- me-1"></i>
                                         Rp {{ number_format($order->total_harga, 0, ',', '.') }}
                                     </td>
                                     <td>
