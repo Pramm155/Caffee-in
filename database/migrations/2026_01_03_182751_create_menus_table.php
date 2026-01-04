@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('nama_menu');
             $table->text('deskripsi');
             $table->decimal('harga', 10, 2);
-            $table->string('kategori'); // kopi, non-kopi, makanan, dessert
+            $table->string('kategori'); 
             $table->string('gambar')->nullable();
             $table->boolean('tersedia')->default(true);
             $table->timestamps();

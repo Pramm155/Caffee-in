@@ -4,7 +4,6 @@
 
 @section('content')
 <div class="container py-4">
-    <!-- Header Dashboard dengan Gradient -->
     <div class="row mb-4">
         <div class="col-12">
             <div class="dashboard-header p-4 rounded-3" style="background: linear-gradient(135deg, #5D2906, #8B4513);">
@@ -34,7 +33,6 @@
         </div>
     </div>
     
-    <!-- Stats Cards dengan Ikon dan Animasi -->
     <div class="row mb-4">
         <div class="col-md-3 mb-3">
             <div class="card border-0 shadow-lg h-100 hover-lift">
@@ -159,7 +157,7 @@
         </div>
     </div>
     
-    <!-- Pesanan Terbaru dengan CRUD -->
+    <!--  CRUD -->
     <div class="row">
         <div class="col-12">
             <div class="card border-0 shadow-lg">

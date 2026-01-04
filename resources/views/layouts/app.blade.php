@@ -53,7 +53,7 @@
                 10% 90%, 50% 90%, 90% 90%;
             background-repeat: no-repeat;
             background-size: 40px 40px;
-            opacity: 20;
+            opacity: 0.5;
             z-index: -1;
             pointer-events: none;
         }
@@ -362,8 +362,8 @@
         /* Floating background icons */
         .floating-icon {
             position: fixed;
-            opacity: 0.10;
-            z-index: 0;
+            opacity: 0.15;
+            z-index: 5;
             pointer-events: none;
             font-size: 3rem;
             color: var(--kopi-coklat-tua);
@@ -385,7 +385,7 @@
             }
         }
 
-        /* STICKY FOOTER - Footer tetap di bawah */
+        /* STICKY FOOTER  */
         html, body {
             height: 100%;
         }
@@ -397,17 +397,16 @@
 
         main {
             flex: 1 0 auto;
-            padding-bottom: 50px; /* Memberikan ruang untuk footer */
+            padding-bottom: 50px;
         }
 
         footer {
             flex-shrink: 0;
             width: 100%;
             position: relative;
-            margin-top: auto; /* Ini yang membuat footer tetap di bawah */
+            margin-top: auto; 
         }
 
-        /* Optional: Untuk menjaga konten footer tetap rapi */
         .footer-content {
             min-height: 60px;
         }
@@ -431,7 +430,6 @@
                 margin-top: 10px;
             }
             
-            /* Reduce background pattern on mobile */
             body::before {
                 opacity: 0.03;
                 background-size: 30px 30px;

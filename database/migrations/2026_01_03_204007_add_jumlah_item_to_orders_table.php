@@ -12,7 +12,7 @@ return new class extends Migration
         Schema::dropIfExists('order_items');
         Schema::dropIfExists('orders');
         
-        // Buat tabel orders baru dengan struktur lengkap
+        //  tabel orders baru struktur lengkap
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('nomor_pesanan')->unique();

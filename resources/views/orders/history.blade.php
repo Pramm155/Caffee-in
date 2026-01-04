@@ -90,31 +90,6 @@
                                                   id="status-{{ $order->id }}">
                                                 {{ ucfirst($order->status) }}
                                             </span>
-                                            
-                                            <!-- Dropdown untuk ganti status (Hanya untuk operator) -->
-                                            <!-- @auth
-                                                @if(auth()->user()->isOperator() || auth()->user()->isAdmin())
-                                                <div class="dropdown">
-                                                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" 
-                                                            type="button" 
-                                                            data-bs-toggle="dropdown">
-                                                        <i class="bi bi-pencil"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        @foreach(['pending', 'diproses', 'selesai', 'dibatalkan'] as $status)
-                                                        <li>
-                                                            <a class="dropdown-item status-change" 
-                                                               href="#" 
-                                                               data-order-id="{{ $order->id }}" 
-                                                               data-status="{{ $status }}">
-                                                                {{ ucfirst($status) }}
-                                                            </a>
-                                                        </li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                                @endif -->
-                                            @endauth
                                         </div>
                                     </td>
                                     <td>{{ $order->jumlah_item }} item</td>
@@ -127,23 +102,10 @@
                                                class="btn btn-sm btn-outline-kopi" 
                                                title="Detail">
                                                 <i class="bi bi-eye"></i>
-                                            </a>       
-                                            <!-- Tombol Hapus (Hanya untuk operator) -->
-                                        <!-- @auth
-                                             @if(auth()->user()->isOperator() || auth()->user()->isAdmin())
-                                            <button class="btn btn-sm btn-outline-danger delete-order" 
-                                                      data-order-id="{{ $order->id }}"
-                                                      data-order-number="{{ $order->nomor_pesanan }}"
-                                                      title="Hapus">
-                                                 <i class="bi bi-trash"></i>
-                                            </button>
-                                            @endif
-                                        @endauth -->
-                                    </td>                                           
-                                        </div>
-                                         
+                                            </a>    
+                                        </div>   
+                                    </td>                                                         
                                 </tr>
-                            
                                 @endforeach
                             </tbody>
                         </table>

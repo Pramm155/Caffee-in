@@ -29,7 +29,6 @@
                                      class="img-fluid w-100 h-100"
                                      style="object-fit: cover;">
                             </div>
-                            <!-- Jika ada gambar lain bisa ditambahkan di sini -->
                         </div>
                     </div>
                 </div>
