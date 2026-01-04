@@ -362,8 +362,8 @@
         /* Floating background icons */
         .floating-icon {
             position: fixed;
-            opacity: 0.15;
-            z-index: 5;
+            opacity: 0.10;
+            z-index: 3;
             pointer-events: none;
             font-size: 3rem;
             color: var(--kopi-coklat-tua);
