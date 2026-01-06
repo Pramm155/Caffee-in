@@ -96,4 +96,38 @@ class User extends Authenticatable
     {
         return $query->where('role', 'pelanggan')->orWhereNull('role');
     }
+
+    /**
+     * Relasi one-to-many dengan Order
+     */
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    /**
+     * Dapatkan nama lengkap (fallback ke name jika null)
+     */
+    public function getNamaLengkapAttribute($value)
+    {
+        return $value ?? $this->name;
+    }
+
+    /**
+     * Format nomor telepon
+     */
+    public function getFormattedNoTelepon()
+    {
+        if (empty($this->no_telepon)) {
+            return '-';
+        }
+        
+        // Format: 0812-3456-7890
+        $no = preg_replace('/[^0-9]/', '', $this->no_telepon);
+        if (strlen($no) > 10) {
+            return substr($no, 0, 4) . '-' . substr($no, 4, 4) . '-' . substr($no, 8);
+        }
+        
+        return $this->no_telepon;
+    }
 }
