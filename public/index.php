@@ -10,6 +10,9 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
     require $maintenance;
 }
 
+// Forward request ke public/index.php milik Laravel
+require __DIR__ . '/../public/index.php';
+
 // Register the Composer autoloader...
 require __DIR__.'/../vendor/autoload.php';
 
